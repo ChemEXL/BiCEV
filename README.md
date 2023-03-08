@@ -16,7 +16,9 @@ This repository contains the code for implement BiCEV(Bidirectional Compound-Exp
 #### Pretraining Chemical Language Autoencoder Model (CLA)
 
 `cla_model = CLA()`
+
 `cla_trainer = pl.Trainer(max_epochs=20)`
+
 `cla_trainer.fit(cla_model)`
 
 
@@ -24,5 +26,7 @@ This repository contains the code for implement BiCEV(Bidirectional Compound-Exp
 
 `model = BiCEV(cla_enc_weight='weight/cla_encoder_weight.ckpt',`
 `                cla_dec_weight='weight/cla_decoder_weight.ckpt')`
+
 `trainer = pl.Trainer(gpus=[0], max_epochs=1)`
+
 `trainer.fit(model)`
