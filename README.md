@@ -14,7 +14,7 @@ This repository contains the code to implement BiCEV (Bidirectional Compound-Exp
 
 ### Installation
 BiCEV implementation relies on NumPy, Pandas, PyTorch, PyTorch Lightning, RDKit-pypi, cmapPy, and fcd. 
-You may install these dependencies using the following command:
+You may install these dependencies using the following command (recommend for cuda version 12.0):
 
 `pip install -r requirements.txt`
 
@@ -43,3 +43,11 @@ model = BiCEV(cla_enc_weight='cla_encoder_weight.ckpt',
 trainer = pl.Trainer(gpus=[0], max_epochs=1)
 trainer.fit(model)
 ```
+
+---
+### References
+* ZINC15: Sterling and Irwin, J. Chem. Inf. Model, 2015 http://pubs.acs.org/doi/abs/10.1021/acs.jcim.5b00559. 
+* LINCS L1000 GSE70138: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
+* Subramanian A, et al. A Next Generation Connectivity Map: L1000 Platform And The First 1,000,000 Profiles. Cell. 2017/12/1. 171(6):1437–1452.
+* CMAP LINCS 2020: https://clue.io/data/CMap2020#LINCS2020
+* https://github.com/insilicomedicine/BiAAE
