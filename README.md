@@ -17,7 +17,8 @@ Download link: https://kmutt.me/bicev_data
 BiCEV depends on NumPy, Pandas, PyTorch, PyTorch Lightning, RDKit-pypi, cmapPy, and fcd. 
 You can install these dependencies using the following command:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
+
 
 
 ### Training model
