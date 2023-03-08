@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 from model.cla_component import CompoundEncoder, CompoundDecoder
 from dataloader.mol_data import MoleculeDataset
 from utils import tanimoto_calc

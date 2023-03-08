@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 import pickle
 import numpy as np
 import pandas as pd

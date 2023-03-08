@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 from model.cla_component import CompoundEncoder, CompoundDecoder
 from model.cea_component import FinetunedEncoder, FinetunedDecoder, ExpressionEncoder, ExpressionDecoder
 from dataloader.exp_data import ExpressionDataSet, ExpressionSampler

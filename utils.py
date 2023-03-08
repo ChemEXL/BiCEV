@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 import torch
 from rdkit import Chem
 from rdkit.Chem import AllChem

@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 import numpy as np
 import pandas as pd
 import torch

@@ -1,3 +1,5 @@
+# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
+
 import torch
 import torch.nn.functional as F
 from torch import nn
