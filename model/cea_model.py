@@ -14,7 +14,7 @@ import pytorch_lightning as pl
 from rdkit import Chem
 
 class BiCEV(pl.LightningModule):
-    def __init__(self, cla_enc_weight=None, cla_dec_weight=None, ref=None):
+    def __init__(self, cla_enc_weight=None, cla_dec_weight=None, ref_smiles=None):
         super(BiCEV, self).__init__()
         
         self.z_dim = 20
@@ -29,6 +29,12 @@ class BiCEV(pl.LightningModule):
         self.test_stats = []
         self.stat = []
         self.epoch = 0
+
+        if ref_smiles == None:
+            ref = pd.read_csv("data/zinc_dataset_250k.csv")
+            self.ref_smiles = set(ref.smiles.values)
+        else:
+            self.ref_smiles = ref_smiles
         
         cmp_enc = CompoundEncoder(out_dim=88)
         if cla_enc_weight != None:
