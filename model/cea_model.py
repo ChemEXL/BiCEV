@@ -25,7 +25,6 @@ class BiCEV(pl.LightningModule):
         self.loss_shared_lambda = 2
         self.loss_kl_beta = 0.05
 
-        self.set_ref = set(ref.smiles.values)
         self.test_stats = []
         self.stat = []
         self.epoch = 0
@@ -159,7 +158,7 @@ class BiCEV(pl.LightningModule):
         valid = len([s for s in sampled_sm[0] if Chem.MolFromSmiles(s) is not None]) / len(sampled_sm[0])
         unique = len(np.unique(sampled_sm[0])) / len(sampled_sm[0])
         set_gen = set(sampled_sm[0])
-        novelty = 1-(len(set_gen.intersection(self.set_ref)) / len(sampled_sm[0]))
+        novelty = 1-(len(set_gen.intersection(self.ref_smiles)) / len(sampled_sm[0]))
         similarity_score = []
         for i in range(len(x)):
             similarity_score.append(tanimoto_calc(x[i],sampled_sm[0][i]))
@@ -220,7 +219,7 @@ class BiCEV(pl.LightningModule):
         valid = len([s for s in sampled_sm[0] if Chem.MolFromSmiles(s) is not None]) / len(sampled_sm[0])
         unique = len(np.unique(sampled_sm[0])) / len(sampled_sm[0])
         set_gen = set(sampled_sm[0])
-        novelty = 1-(len(set_gen.intersection(self.set_ref)) / len(sampled_sm[0]))
+        novelty = 1-(len(set_gen.intersection(self.ref_smiles)) / len(sampled_sm[0]))
         similarity_score = []
         for i in range(len(x)):
             similarity_score.append(tanimoto_calc(x[i],sampled_sm[0][i]))

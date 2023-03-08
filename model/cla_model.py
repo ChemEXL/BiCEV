@@ -92,7 +92,7 @@ class CLA(pl.LightningModule):
         unique = len(np.unique(sampled_sm)) / len(sampled_sm)
         similar = [tanimoto_calc(x_ob,s) for (x_ob, s) in zip(x, sampled_sm) if (Chem.MolFromSmiles(s) is not None)]
         similar_avg = np.mean(similar)
-        novelty = 1-(len(set(sampled_sm).intersection(self.set_ref)) / len(sampled_sm))
+        novelty = 1-(len(set(sampled_sm).intersection(self.ref_smiles)) / len(sampled_sm))
 
         return {'valid': valid, 'unique': unique, 'novelty': novelty, 
                 'similar': similar_avg, 'smiles': sampled_sm, 'ref_smi':x}
