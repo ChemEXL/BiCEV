@@ -8,7 +8,7 @@ This repository contains the code to implement BiCEV (Bidirectional Compound-Exp
 
 
 * Compound and gene expression datasets (including GSE70138, gene-knockdown profiles, and combined signatures of synergistic drug pairs) can be downloaded from the `dataset` folder in this link: https://kmutt.me/bicev_data.
-* Please copy the downloaded dataset to the `data` folder to implement.
+* Please copy the downloaded datasets to the `data` folder to implement.
 * Weights of the CLA and BiCEV models are also provided in the `weights` folder in the same link.
 
 
