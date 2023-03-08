@@ -6,14 +6,16 @@ This repository contains the code to implement BiCEV (Bidirectional Compound-Exp
 
 ### Additional Files
 
-* The compound dataset and gene expression dataset (including GSE70138, gene-knockdown profiles, and combined signatures of synergistic drug pairs) can be  downloaded from `dataset` folder in this link: https://kmutt.me/bicev_data.
+Download link: https://kmutt.me/bicev_data
+
+* Compound and gene expression datasets (including GSE70138, gene-knockdown profiles, and combined signatures of synergistic drug pairs) can be downloaded from `dataset` folder in this link: https://kmutt.me/bicev_data.
 * Please copy the downloaded dataset to `data` folder to implement.
 * Weights of the CLA and BiCEV models are also provided in the `weights` folder in the same link.
 
 
 ### Installation
-BiCEV depends on NumPy, Pandas, PyTorch, PyTorch Lightning, RDKit-pypi, cmapPy, and fcd. 
-You can install these dependencies using the following command:
+BiCEV implementation relies on NumPy, Pandas, PyTorch, PyTorch Lightning, RDKit-pypi, cmapPy, and fcd. 
+You may install these dependencies using the following command:
 
 `pip install -r requirements.txt`
 
