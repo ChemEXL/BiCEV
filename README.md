@@ -3,11 +3,10 @@
 
 This repository contains the code to implement BiCEV (Bidirectional Compound-Expression Variational Autoencoder) for generating molecules from given gene expression data.
 
----
 
 ### Additional Files
 
-https://kmutt.me/bicev_data
+Download link: https://kmutt.me/bicev_data
 
 * Compound dataset and gene expression dataset (including GSE70138, gene-knockdown profiles, and combined signatures of synergistic drug pairs) can be loaded via `data` folder. 
 * Weights of CLA and BiCEV model are also provided in `weight` folder.
