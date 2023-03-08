@@ -1,5 +1,4 @@
-# Parts of the code were adapted from https://github.com/insilicomedicine/BiAAE
-
+# Parts of the code were adapted from Shayakhmetov, R.; Kuznetsov, M.; Zhebrak, A.; Kadurin, A.; Nikolenko, S.; Aliper, A.; Polykovskiy, D. Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. Frontiers in Pharmacology 2020, 11.
 import pickle
 import numpy as np
 import pandas as pd

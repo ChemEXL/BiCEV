@@ -47,7 +47,7 @@ trainer.fit(model)
 ---
 ### References
 * ZINC15: Sterling and Irwin, J. Chem. Inf. Model, 2015 http://pubs.acs.org/doi/abs/10.1021/acs.jcim.5b00559. 
+* CMAP LINCS 2020: https://clue.io/data/CMap2020#LINCS2020
 * LINCS L1000 GSE70138: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
 * Subramanian A, et al. A Next Generation Connectivity Map: L1000 Platform And The First 1,000,000 Profiles. Cell. 2017/12/1. 171(6):1437–1452.
-* CMAP LINCS 2020: https://clue.io/data/CMap2020#LINCS2020
-* https://github.com/insilicomedicine/BiAAE
+* Shayakhmetov, R.; Kuznetsov, M.; Zhebrak, A.; Kadurin, A.; Nikolenko, S.; Aliper, A.; Polykovskiy, D. Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. Frontiers in Pharmacology 2020, 11.
