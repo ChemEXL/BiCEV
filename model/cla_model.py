@@ -1,4 +1,6 @@
-# Parts of the code were adapted from Shayakhmetov, R.; Kuznetsov, M.; Zhebrak, A.; Kadurin, A.; Nikolenko, S.; Aliper, A.; Polykovskiy, D. Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. Frontiers in Pharmacology 2020, 11.
+# Parts of the code were adapted from Shayakhmetov R, et al. 
+# Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. 
+# Frontiers in Pharmacology 2020, 11.
 
 from model.cla_component import CompoundEncoder, CompoundDecoder
 from dataloader.mol_data import MoleculeDataset

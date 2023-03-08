@@ -50,4 +50,4 @@ trainer.fit(model)
 * CMAP LINCS 2020: https://clue.io/data/CMap2020#LINCS2020
 * LINCS L1000 GSE70138: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE70138
 * Subramanian A, et al. A Next Generation Connectivity Map: L1000 Platform And The First 1,000,000 Profiles. Cell. 2017/12/1. 171(6):1437–1452.
-* Shayakhmetov, R.; Kuznetsov, M.; Zhebrak, A.; Kadurin, A.; Nikolenko, S.; Aliper, A.; Polykovskiy, D. Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. Frontiers in Pharmacology 2020, 11.
+* Shayakhmetov R, et al. Molecular Generation for Desired Transcriptome Changes With Adversarial Autoencoders. Frontiers in Pharmacology 2020, 11.
